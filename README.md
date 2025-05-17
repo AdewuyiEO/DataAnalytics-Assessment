@@ -1,4 +1,4 @@
-# 📊 Data Analytics SQL Assessment
+# Data Analytics SQL Assessment
 
 This repository contains solutions to a SQL proficiency assessment aimed at evaluating my ability to extract insights from relational databases. The tasks simulate real-world business questions, focusing on customer behavior, financial transaction analysis, and value estimation using structured query language (SQL).
 
@@ -6,7 +6,7 @@ Each query is written to be **accurate**, **efficient**, and **readable**, with 
 
 ---
 
-## 🔍 Question 1: High-Value Customers with Multiple Products
+## Question 1: High-Value Customers with Multiple Products
 
 **Business Goal:**  
 Identify customers who have both a funded savings plan and a funded investment plan to enable cross-selling opportunities.
@@ -24,7 +24,7 @@ A key learning point here was clearly distinguishing plan types using flags like
 
 ---
 
-## 🔁 Question 2: Transaction Frequency Analysis
+## Question 2: Transaction Frequency Analysis
 
 **Business Goal:**  
 Classify customers based on transaction frequency to aid segmentation (e.g., frequent vs. occasional users).
@@ -43,7 +43,7 @@ Accurately calculating months of activity was crucial. I used date functions to 
 
 ---
 
-## 🚨 Question 3: Account Inactivity Alert
+## Question 3: Account Inactivity Alert
 
 **Business Goal:**  
 Detect accounts with no inflow (deposits) in the last 365 days for customer success team follow-up.
@@ -58,7 +58,7 @@ This task required careful handling of date functions and ensuring only relevant
 
 ---
 
-## 📈 Question 4: Customer Lifetime Value (CLV) Estimation
+## Question 4: Customer Lifetime Value (CLV) Estimation
 
 **Business Goal:**  
 Estimate the customer lifetime value using a simplified formula based on account tenure and transaction volume.
@@ -72,13 +72,13 @@ Estimate the customer lifetime value using a simplified formula based on account
 **Reflection:**  
 Ensuring correct conversion from kobo to naira was critical. This task helped reinforce the importance of unit handling and formula-driven estimations in SQL.
 
-## 💡 General Insights & Challenges
+## General Insights & Challenges
 
 - **Data modeling matters**: Understanding foreign key relationships was key to writing correct joins.
 - **Date manipulation**: Several queries required working with timestamps — I learned to handle these confidently across different SQL engines.
 - **Edge case handling**: Ensuring all queries accounted for nulls, inactive users, and small sample groups helped build robust outputs.
 
-## 📂 Repository Structure
+## Repository Structure
 DataAnalytics-Assessment/
 ├── Assessment_Q1.sql
 ├── Assessment_Q2.sql
