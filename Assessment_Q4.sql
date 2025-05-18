@@ -1,4 +1,5 @@
 WITH CustomerTransactions AS (
+    -- Calculate total transactions and deposit value per customer
     SELECT
         ssa.owner_id,
         COUNT(*) AS total_transactions,
@@ -11,6 +12,7 @@ WITH CustomerTransactions AS (
         ssa.owner_id
 ),
 CustomerTenure AS (
+    -- Calculate account tenure in months for each customer
     SELECT
         id AS customer_id,
         name,
@@ -23,7 +25,7 @@ SELECT
     cten.name,
     cten.tenure_months,
     ct.total_transactions,
-    (CAST(ct.total_transactions AS DECIMAL) / cten.tenure_months) * 12 * (0.001 * ct.total_deposit_value) AS estimated_clv
+    (CAST(ct.total_transactions AS DECIMAL) / cten.tenure_months) * 12 * (0.001 * ct.total_deposit_value) AS estimated_clv -- CLV = (transactions/tenure) * 12 months * 0.1% profit of total deposit value
 FROM
     CustomerTransactions ct
 JOIN
