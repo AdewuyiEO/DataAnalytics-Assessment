@@ -1,4 +1,5 @@
 WITH LastTransactions AS (
+    -- Find the last transaction date for each savings and investment account
     SELECT
         'Savings' AS type,
         ssa.plan_id,
@@ -26,6 +27,7 @@ WITH LastTransactions AS (
         pp.id, pp.owner_id, CASE WHEN pp.is_regular_savings = 1 THEN 'Savings' ELSE 'Investment' END
 ),
 ActiveAccounts AS (
+    -- Identify all active savings and investment plans
     SELECT DISTINCT
         CASE WHEN pp.is_regular_savings = 1 THEN 'Savings' ELSE 'Investment' END AS type,
         pp.id AS plan_id,
