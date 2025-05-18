@@ -75,13 +75,6 @@ Ensuring the correct units (converting kobo to the base currency) was crucial fo
 - **Data Type Awareness**: Being mindful of data types, especially when performing calculations (e.g., casting to `REAL` for division), was important for accurate results.
 - **Business Logic Translation**: The main challenge was translating the business requirements of each question into effective SQL queries, often requiring multiple steps and careful filtering.
 
-## Repository Structure
-DataAnalytics-Assessment/
-├── Assessment_Q1.sql
-├── Assessment_Q2.sql
-├── Assessment_Q3.sql
-├── Assessment_Q4.sql
-└── README.md
 
 
 
