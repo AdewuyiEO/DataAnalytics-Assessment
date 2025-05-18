@@ -1,4 +1,5 @@
 WITH MonthlyTransactions AS (
+    -- Count monthly transactions per customer
     SELECT
         u.id AS customer_id,
         u.name,
@@ -14,6 +15,7 @@ WITH MonthlyTransactions AS (
         u.id, u.name, transaction_month
 ),
 CustomerMonthlyAvg AS (
+    -- Calculate average monthly transactions per customer
     SELECT
         customer_id,
         name,
