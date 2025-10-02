@@ -1,4 +1,4 @@
-# Data Analytics SQL Assessment
+# Data Analytics with SQL
 
 This repository contains solutions to a SQL proficiency assessment aimed at evaluating my ability to extract insights from relational databases. The tasks simulate real-world business questions, focusing on customer behavior, financial transaction analysis, and value estimation using structured query language (SQL).
 
